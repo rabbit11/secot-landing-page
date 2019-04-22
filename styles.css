@@ -1,3 +1,93 @@
 body{
     font-family: 'Nunito', sans-serif;
 }
+
+#banner{
+    /* display: flex;
+    flex-flow: column;
+    height: 100%;
+    flex-grow: 1; */
+    vertical-align: middle;
+    line-height: 35px;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#banner #texto{
+    font-size: 1.2em;
+}
+
+.conteudo{
+    font-size: 1.2em;
+}
+
+#sobre{
+    margin-bottom: 200px;
+    background:#BC2018;
+    color:white;
+    min-height: 100vh;
+
+}
+
+#programacao{
+    margin-bottom: 200px;
+    min-height: 100vh;
+
+}
+
+#programacao a{
+    font-size: 100px;
+}
+
+#participe{
+    margin-bottom: 200px;
+    background: #BC2018;
+    color: white;
+    min-height: 100vh;
+}
+
+#participe img{
+    width: 100%;
+    height: 100%;
+}
+
+#apoiadores{
+    margin-bottom: 200px;
+    min-height: 100vh;
+
+}
+
+#mainNavbar{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#mainNavbar.scrolled{
+    background: #BC2018;
+    color: white;
+    transition: background 800ms;
+
+}
+
+#countDown{
+    color:white;
+    background: #BC2018;
+}
+
+.title{
+    color:#BC2018;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.conteudo img{
+    margin-left: 100px;
+    height: 200px;
+}
+
+.fa-facebook{
+    color: #BC2018;
+    font-size: 2.0em;
+}

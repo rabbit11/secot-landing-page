@@ -8,26 +8,179 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 align-self-center">
-            <h1 class="display-1">SECOT XI</h1>
+  <body data-spy="scroll" data-target="#mainNavbar">
+    <section class="top-bar">
+      <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <!-- <div class="container"> -->
+          <a class="navbar-brand" href="#"> <img src="https://secot.com.br/img/logo_round.png" alt=""> SECOT</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#programacao">Programação<span class="sr-only"></span></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#participe">Participe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#apoiadores">Seja um apoiador</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-6 align-self-center">
-            <h1 id="countDown" class="display-1"></h1>
+
+        <!-- </div> -->
+      </nav>
+    </section>
+
+    <section id="banner" class="d-flex align-items-center">
+      <div class="container">
+        <div class="d-flex flex-row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <h1 class="display-3 title">SECOT XI</h1>
+            <p id="texto">Este ano a SECOT acontecerá dos dias 26 à 30 de Agosto, no Núcleo ETC, Soracaba, São Paulo<p>
+            <a class="btn btn-danger" href="https://secot.com.br/">Confira o evento do ano anterior</a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div id="countDown" class="col-md-6 text-center title pt-3 shadow-lg rounded">
+            <div class="row">
+              <div class="col-lg-3">
+                <h1 id="dias" class="display-5"></h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5" id="horas"></h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5" id="minutos"></h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5" id="segundos"></h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <h1 class="display-5">D</h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5">H</h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5">M</h1>
+              </div>
+              <div class="col-lg-3">
+                <h1 class="display-5">S</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-      <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+
+    <section class="conteudo">
+      <section id="sobre" class="d-flex align-items-center">
+        <div class="container">
+          <div class="d-flex flex-row align-items-center justify-content-center">
+            <div class="col-lg-6 ">
+              <!-- <h1 class="display-3 text-center">espaço para imagem</h1> -->
+              <img src="https://secot.com.br/img/logo_round.png" alt="logo SECOT">
+            </div>
+            <div class="col-lg-6 ">
+              <h1 class="display-3 text-center mt-2">Sobre</h1>
+              <p>A SECOT XI é a 11ª edição da Semana da Computação e Tecnologia da Universidade Federal de São Carlos - campus
+                Sorocaba.</p>
+              
+              <p>Criada em 2009, a SECOT é um evento organizado e promovido anualmente pelos alunos do curso com o apoio de docentes da
+                área e considerada um dos maiores eventos acadêmicos sobre tecnologia da região.</p>
+                
+                <p>A SECOT é um evento que conta com diversas palestras com o objetivo de apresentar e debater temas relacionados à
+                  Computação, bem como suas aplicações em diversas áreas com ênfase em novas tecnologias e tendências do mercado.
+                </p>
+                
+                <p>
+                  Sempre tentando trazer o melhor na área de tecnologia e suas diversas áreas, a semana é aberta para toda a comunidade de
+                  Sorocaba, contribuindo para consolidar a cidade como uma região atrativa para captação de programadores e instalação de
+                  empresas de tecnologia.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <section id="programacao" class="d-flex align-items-center">
+              <div class="container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                  <div class="col-lg-6">
+                    <h1 class="display-4 text-center title"> < Programação /></h1>
+                    <p>A SECOT XI tem duração dos dias 26/08 - 30/08, onde todos os dias traremos diferentes
+                      palestras e mini cursos focados na área de tecnologia. O evento tem duração das 9h-18h
+                      incluindo coffee-break entre palestras. Além disso no último dia de evento acontece uma
+                      mini maratona de programação na UFSCar Sorocaba.</p>
+                      <p>Infelizmente ainda não possuímos uma lineup definida, por isso nos acompanhe nas redes
+                        sociais para não ficar por fora!
+                      </p>
+                      <a href="https://www.facebook.com/secot.ufscar/"><i class="fab fa-facebook text-center"></i></a>
+                    </div>
+                    <div class="col-lg-6 mx-auto text-center">
+                      <!-- <p>Espaço para imagem do evento</p> -->
+                      <!-- <img src="https://scontent.fsod3-1.fna.fbcdn.net/v/t31.0-8/18489878_1561324023910026_3863293913079333034_o.jpg?_nc_cat=104&_nc_ht=scontent.fsod3-1.fna&oh=426db539342aa8cfebdb36fd31df6500&oe=5D713B61" alt=""> -->
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section id="participe" class="d-flex align-items-center">
+                <div class="container">
+                  <div class="d-flex flex-row align-items-center justify-content-center">
+                    <div class="col-lg-6 align-self-center">
+                      <!-- <img src="https://scontent.fsod3-1.fna.fbcdn.net/v/t31.0-8/18489878_1561324023910026_3863293913079333034_o.jpg?_nc_cat=104&_nc_ht=scontent.fsod3-1.fna&oh=426db539342aa8cfebdb36fd31df6500&oe=5D713B61" alt=""> -->
+                      
+                      <p>Espaço para imagem do evento</p>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                      <h1 class="display-4 text-center">
+                        Participe
+                      </h1>
+                      <p>A participação na SECOT XI é gratuita para todos!</p>
+                      <p>Não sendo necessária qualquer tipo de inscrição
+                      prévia! Junte-se a nós <p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section id="apoiadores" class="d-flex align-items-center">
+                <div class="container">
+                  <div class="d-flex flex-row align-items-center justify-content-center">
+                    <div class="col-lg-6 align-self-center">
+                      <h1 class="display-4 text-center title">Seja um apoiador</h1>
+                      <p>Deseja se tornar um apoiador do evento? Basta preencher o formulário e entraremos em 
+                        contanto com você!
+                      </p>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                      <p>espaço para o forms</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <div class="sigma-container"></div>
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+              <script src="script.js"></script>
+              <script src="animation.js"></script>
+            </body>
+            </html>
