@@ -1,5 +1,6 @@
 body{
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 #banner{
@@ -22,7 +23,7 @@ body{
 }
 
 #sobre{
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     background:#BC2018;
     color:white;
     min-height: 100vh;
@@ -36,7 +37,7 @@ body{
 }
 
 #programacao a{
-    font-size: 100px;
+    font-size: 65px;
 }
 
 #participe{
