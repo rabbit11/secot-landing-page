@@ -27,8 +27,12 @@ body{
     background:#BC2018;
     color:white;
     min-height: 100vh;
+    background-image: url(img/aa3.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
+
 
 #programacao{
     margin-bottom: 200px;
@@ -42,9 +46,11 @@ body{
 
 #participe{
     margin-bottom: 200px;
-    background: #BC2018;
     color: white;
     min-height: 100vh;
+    background-image: url(img/aa.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #participe img{
