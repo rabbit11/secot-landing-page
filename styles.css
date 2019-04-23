@@ -48,6 +48,7 @@ body{
     margin-bottom: 200px;
     color: white;
     min-height: 100vh;
+    background:#BC2018;
     background-image: url(img/aa.jpg);
     background-position: center;
     background-size: cover;
