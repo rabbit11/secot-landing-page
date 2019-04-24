@@ -23,18 +23,16 @@ body{
 }
 
 #sobre{
-    margin-bottom: 250px;
     background:#BC2018;
     color:white;
     min-height: 100vh;
-    background-image: url(img/aa3.jpg);
+    background-image: url(img/aa3-invertido.jpg);
     background-position: center;
     background-size: cover;
 }
 
 
 #programacao{
-    margin-bottom: 200px;
     min-height: 100vh;
 }
 
@@ -43,7 +41,6 @@ body{
 }
 
 #participe{
-    margin-bottom: 200px;
     color: white;
     min-height: 100vh;
     background:#BC2018;
@@ -58,9 +55,12 @@ body{
 }
 
 #apoiadores{
-    margin-bottom: 200px;
     min-height: 100vh;
 
+}
+
+#apoiadores a{
+    font-size: 1.2em;
 }
 
 #mainNavbar{
@@ -73,6 +73,16 @@ body{
     color: white;
     transition: background 800ms;
 
+}
+
+#organizacao{
+    color: white;
+    min-height: 100vh;
+    background:#BC2018;
+}
+
+#organizacao a{
+    font-size: 1.2rem;
 }
 
 .countDown{
@@ -93,7 +103,8 @@ body{
     height: 200px;
 }
 
-.fa-facebook{
+.fab{
     color: #BC2018;
     font-size: 2.0em;
 }
+
