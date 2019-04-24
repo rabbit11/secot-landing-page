@@ -1,3 +1,108 @@
 body{
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+#banner{
+    /* display: flex;
+    flex-flow: column;
+    height: 100%;
+    flex-grow: 1; */
+    vertical-align: middle;
+    line-height: 35px;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#banner #texto{
+    font-size: 1.2em;
+}
+
+.conteudo{
+    font-size: 1.2em;
+}
+
+#sobre{
+    background:#BC2018;
+    color:white;
+    min-height: 100vh;
+    background-image: url(img/aa3-invertido.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#programacao{
+    min-height: 100vh;
+}
+
+#programacao a{
+    font-size: 65px;
+}
+
+#participe{
+    color: white;
+    min-height: 100vh;
+    background:#BC2018;
+    background-image: url(img/aa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#apoiadores{
+    min-height: 100vh;
+
+}
+
+#apoiadores a{
+    font-size: 1.2em;
+}
+
+#mainNavbar{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#mainNavbar.scrolled{
+    background: #BC2018;
+    color: white;
+    transition: background 800ms;
+
+}
+
+#organizacao{
+    color: white;
+    min-height: 100vh;
+    background:#BC2018;
+}
+
+#organizacao a{
+    font-size: 1.2rem;
+}
+
+.countDown{
+    color:white;
+    background: #BC2018;
+}
+
+.title{
+    color:#BC2018;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.conteudo img{
+    margin-left: 100px;
+    height: 200px;
+}
+
+.fab{
+    color: #BC2018;
+    font-size: 2.0em;
+}
+
+.countText{
+    font-size: 2.0em;
 }
