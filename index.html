@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <link rel="icon" type="image/png" href="https://secot.com.br/favicon.png">
     <title>SeCoT</title>
     <!-- Required meta tags -->
@@ -11,190 +12,182 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body data-spy="scroll" data-target="#mainNavbar">
+</head>
+
+<body data-spy="scroll" data-target="#mainNavbar">
     <section class="top-bar">
-      <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
-          <a class="navbar-brand" href="#"> <img src="https://secot.com.br/img/logo_round.png" alt=""> SeCoT</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre<span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#programacao">Programação<span class="sr-only"></span></a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#participe">Participe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#apoiadores">Seja um apoiador</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+        <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+            <a class="navbar-brand" href="#"> <img src="https://secot.com.br/img/logo_round.png" alt=""> SeCoT</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programacao">Programação<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#participe">Participe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apoiadores">Seja um apoiador</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </section>
 
-    <section id="banner" class="d-flex align-items-center">
-      <div class="container">
-        <div class="d-flex row align-items-center justify-content-center">
-          <div class="col-md-5">
-            <h1 class="display-3 title">SeCoT XI</h1>
-            <p id="texto">Este ano a SeCoT acontecerá dos dias 26 à 30 de Agosto, no Núcleo ETC, Sorocaba, São Paulo<p>
-            <a class="btn btn-danger" href="https://secot.com.br/">Confira o evento do ano anterior</a>
-          </div>
-          <div class="col-md-1"></div>
-          <!-- <div id="countDown" class="col-md-6 text-center title pt-3 shadow-lg rounded"> -->
-          <div class="d-none d-md-block col-md-6 text-center title">
-            <div class="row">
-              <div class="col-3">
-                <h1 id="dias" class="countDown display-5 rounded-circle p-4"></h1>
-              </div>
-              <div class="col-3">
-                <h1 class="countDown display-5 rounded-circle p-4" id="horas"></h1>
-              </div>
-              <div class="col-3">
-                <h1 class="countDown display-5 rounded-circle p-4" id="minutos"></h1>
-              </div>
-              <div class="col-3">
-                <h1 class="countDown display-5 rounded-circle p-4" id="segundos"></h1>
-              </div>
+    <section id="banner" class="full-height vertical-center container">
+        <div class="vertical-center row">
+            <div class="col-12 col-md-5">
+                <h1 class="display-3 text-red text-center text-md-left mt-5 mt-md-0">SeCoT XI</h1>
+                <p>
+                    Este ano a SeCoT acontecerá dos dias 26 à 30 de Agosto, no Núcleo ETC, Sorocaba, São Paulo
+                </p>
+                <div class="text-center text-md-left">
+                    <a class="btn btn-red" href="https://secot.com.br/">Confira o evento do ano anterior</a>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-3">
-                <h1 class="display-5">D</h1>
-              </div>
-              <div class="col-3">
-                <h1 class="display-5">H</h1>
-              </div>
-              <div class="col-3">
-                <h1 class="display-5">M</h1>
-              </div>
-              <div class="col-3">
-                <h1 class="display-5">S</h1>
-              </div>
+            <div class="d-none d-md-block col-md line right-rotate bg-red"></div>
+            <div class="d-md-none my-3 col"></div>
+            <div class="counter col-12 col-md-5 text-red text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <span id="dias" class="display-1"></span>
+                        <span class="mx-2"></span>
+                        <span class="display-4">Dias</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <h1 class="display-4 mx-auto" id="horas"></h1>
+                        <p class="label">Horas</p>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="display-4 mx-auto" id="minutos"></h1>
+                        <p class="label">Minutos</p>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="display-4 mx-auto" id="segundos"></h1>
+                        <p class="label">Segundos</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="conteudo">
-      <section id="sobre" class="d-flex align-items-center">
-        <div class="container">
-          <div class="d-flex row align-items-center justify-content-center">
-            <div class="col-md-6">
-              <!-- <h1 class="display-3 text-center">espaço para imagem</h1> -->
-              <!-- <img src="https://secot.com.br/img/logo_round.png" alt="logo SeCoT" class="mx-auto d-block"> -->
-            </div>
-            <div class="col-md-6 ">
-              <h1 class="display-3 text-center">Sobre</h1>
-              <p>A SeCoT XI é a 11ª edição da Semana da Computação e Tecnologia da Universidade Federal de São Carlos - campus
-                Sorocaba.</p>
-              
-              <p>Criada em 2009, a SeCoT é um evento organizado e promovido anualmente pelos alunos do curso com o apoio de docentes da
-                área e considerada um dos maiores eventos acadêmicos sobre tecnologia da região.</p>
-                
-                <p>A SeCoT é um evento que conta com diversas palestras, workshops e minicursos com o objetivo de apresentar e debater temas relacionados à
-                  Computação, bem como suas aplicações em diversas áreas com ênfase em novas tecnologias e tendências do mercado.
-                </p>
-                <!-- <p>
-                  Sempre tentando trazer o melhor na área de tecnologia e suas diversas áreas, a semana é aberta para toda a comunidade de
-                  Sorocaba, contribuindo para consolidar a cidade como uma região atrativa para captação de programadores e instalação de
-                  empresas de tecnologia.</p> -->
-                  </div>
+        <section id="sobre" class="vertical-center full-height bg-red">
+            <div class="container">
+                <div class="d-flex row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <!-- <h1 class="display-3 text-center">espaço para imagem</h1> -->
+                        <!-- <img src="https://secot.com.br/img/logo_round.png" alt="logo SeCoT" class="mx-auto d-block"> -->
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="display-4 text-center">Sobre</h1>
+                        <p>
+                            A SeCoT XI é a 11ª edição da Semana da Computação e Tecnologia da Universidade Federal de São Carlos - campus Sorocaba.
+                        </p>
+
+                        <p>
+                            Criada em 2009, a SeCoT é um evento organizado e promovido anualmente pelos alunos do curso com o apoio de docentes da área e considerada um dos maiores eventos acadêmicos sobre tecnologia da região.
+                        </p>
+
+                        <p>
+                            A SeCoT é um evento que conta com diversas palestras, workshops e minicursos com o objetivo de apresentar e debater temas relacionados à Computação, bem como suas aplicações em diversas áreas com ênfase em novas tecnologias e tendências do mercado.
+                        </p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
-            
-        <section id="programacao" class="d-flex align-items-center">
-          <div class="container">
-            <div class="d-flex row align-items-center justify-content-center">
-              <div class="col-md-6">
-                <h1 class="display-4 text-center title"> < Programação /></h1>
-                <p>A SeCoT XI tem duração dos dias 26/08 - 30/08, onde todos os dias traremos diferentes
-                  palestras e mini cursos focados na área de tecnologia. O evento tem duração das 9h-18h
-                  incluindo coffee-break entre palestras. Além disso no último dia de evento acontece uma
-                  mini maratona de programação na UFSCar Sorocaba.</p>
-                  <p>Ainda não possuímos uma lineup definida, por isso nos acompanhe no em nossas redes sociais para não ficar de fora!
-                  </p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <a href="https://www.facebook.com/secot.ufscar/"><i class="fab fa-facebook mr-5"></i></a>
-                  <a href="https://instagram.com/secot.ufscar?utm_source=ig_profile_share&igshid=1rqqywzf0pb4r"><i class="fab fa-instagram ml-5"></i></a>
-                  <!-- <p>Espaço para imagem do evento</p> -->
-                  <!-- <img src="https://scontent.fsod3-1.fna.fbcdn.net/v/t31.0-8/18489878_1561324023910026_3863293913079333034_o.jpg?_nc_cat=104&_nc_ht=scontent.fsod3-1.fna&oh=426db539342aa8cfebdb36fd31df6500&oe=5D713B61" alt=""> -->
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <section id="participe" class="d-flex align-items-center">
-            <div class="container">
-              <div class="d-flex row align-items-right justify-content-center">
-                <div class="col-md-6 order-2 order-md-1">
-                </div>
-                <div class="col-md-6 order-1 order-md-2">
-                  <h1 class="display-4 text-center">
-                    Participe
-                  </h1>
-                  <p>A participação na SeCoT XI é gratuita para todos! 
-                    Sendo necessária apenas uma inscrição prévia para garantir sua vaga!</p>
-                  <p>
-                    As inscrições serão liberadas em nosso site, 
-                    assim que a lineup for definida.<p>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <section id="apoiadores" class="d-flex align-items-center">
-            <div class="container">
-              <div class="d-flex row align-items-center justify-content-center">
-                <div class="col-md-6 ">
-                  <h1 class="display-4 text-center title">Seja um apoiador</h1>
-                  <p>Deseja se tornar um apoiador do evento? Basta preencher o formulário e entraremos em 
-                    contanto com você!
-                  </p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <a class="badge badge-danger text-wrap" href="https://bit.ly/2ZvGzDe">Formulário de interesse</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="organizacao" class="d-flex align-items-center">
-            <div class="container">
-              <div class="row ">
+
+        <section id="programacao" class="container">
+            <div class="vertical-center full-height row">
                 <div class="col-md-6">
-                  <h1 class="display-4 text-center">Organização</h1>
-                  <div class="row">
-                    <div class="col-md-6 text-center">
-                      <img class="w-100 mx-auto"src="https://secot.com.br/img/logo_ufscar.png" alt="logo ufscar" srcset="">
-                    </div>
-                    <div class="col-md-6 text-center">
-                      <img class="w-75 mx-auto"src="https://secot.com.br/img/logo_caccs.png" alt="logo Centro Acadêmico BCC" srcset="">
-                    </div>
-                  </div>
+                    <h1 class="display-4 text-center text-red">&lt; Programação /&gt;</h1>
+                    <p>
+                        A SeCoT XI tem duração dos dias 26/08 - 30/08, onde todos os dias traremos diferentes palestras e mini cursos focados na área de tecnologia. O evento tem duração das 9h-18h incluindo coffee-break entre palestras. Além disso no último dia de evento acontece
+                        uma mini maratona de programação no campus da universidade.
+                    </p>
+                    <p>
+                        Ainda não possuímos uma lineup definida, por isso nos acompanhe em nossas redes sociais para não ficar de fora!
+                    </p>
                 </div>
-                <div class="col-md-6 mx-auto">
-                  <h1 class="display-4 text-center">Desenvolvido por</h1>
-                  <p class="mt-3 ml-5 ">
-                    <a class="badge badge-danger text-wrap" href="https://github.com/rabbit11">Pedro Coelho</a> e
-                    <a class="badge badge-danger text-wrap" href="https://github.com/nathamcoracini">Natham Coracini</a>
-                  </p>
+                <div class="col-md-6 d-flex justify-content-around mb-5 mb-md-0">
+                    <a href="https://www.facebook.com/secot.ufscar/">
+                        <i class="fab fa-facebook text-red fa-9x"></i>
+                    </a>
+                    <a href="https://instagram.com/secot.ufscar?utm_source=ig_profile_share&igshid=1rqqywzf0pb4r">
+                        <i class="fab fa-instagram text-red fa-9x"></i>
+                    </a>
                 </div>
-              </div>
             </div>
-          </section>
         </section>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+
+        <section id="participe" class="text-white">
+            <div class="container">
+                <div class="vertical-center full-height row">
+                    <div class="ml-auto col-md-6">
+                        <h1 class="display-4 text-center">
+                            Participe
+                        </h1>
+                        <p>
+                            A participação na SeCoT XI é gratuita para todos! Sendo necessária apenas uma inscrição prévia para garantir a sua vaga!
+                        </p>
+                        <p>
+                            As inscrições serão liberadas em nosso site, assim que a lineup for definida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apoiadores" class="container">
+            <div class="vertical-center full-height">
+                <div class="w-100 d-flex row align-items-center justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h1 class="display-4 text-center text-red">Seja um apoiador</h1>
+                        <p>
+                            Deseja se tornar um apoiador do evento?
+                        </p>
+                        <p>
+                          Basta preencher o formulário e entraremos em contanto com você!
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <a class="btn btn-red" href="https://bit.ly/2ZvGzDe">
+                            <i class="fas fa-external-link-alt"></i> Acessar o formulário
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="organizacao" class="organizacao full-height vertical-center bg-red">
+            <div class="container">
+                <h1 class="display-4 text-center">Organização</h1>
+                <div class="d-flex justify-content-around vertical-center flex-wrap">
+                    <img class="img-fluid" src="https://secot.com.br/img/logo_ufscar.png" alt="logo ufscar">
+                    <img class="img-fluid" src="https://secot.com.br/img/logo_caccs.png" alt="logo Centro Acadêmico BCC">
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="bg-dark-red py-1">
+        <p class="text-center my-2">
+            Desenvolvido por
+            <a class="badge badge-light text-wrap" href="https://github.com/rabbit11">Pedro Coelho</a> e
+            <a class="badge badge-light text-wrap" href="https://github.com/nathamcoracini">Natham Coracini</a>
+        </p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
