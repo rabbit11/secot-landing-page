@@ -106,3 +106,15 @@ body{
 .countText{
     font-size: 2.0em;
 }
+
+.line {
+  height: 1px;
+  background-color: #BC2018;
+  padding: 1px;
+}
+
+.right-rotate {
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+}
