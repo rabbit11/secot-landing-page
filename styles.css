@@ -106,7 +106,7 @@ body {
     font-weight: 600;
 }
 
- @media (min-width: 992px) {  
+ /* @media (min-width: 992px) {  
     .conteudo {
         font-size: 1.4em;
     }
@@ -119,4 +119,4 @@ body {
     #banner h1{
         font-size: 6.0rem;
     }
-}
+} */
