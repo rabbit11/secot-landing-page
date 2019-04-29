@@ -1,120 +1,138 @@
-body{
+body {
     font-family: 'Nunito', sans-serif;
+    font-size: 18px;
     overflow-x: hidden;
+    /* font-weight: 600; */
 }
 
-#banner{
-    /* display: flex;
-    flex-flow: column;
-    height: 100%;
-    flex-grow: 1; */
-    vertical-align: middle;
-    line-height: 35px;
+.bg-red {
+    background-color: #BC2018;
+    color: #FFFFFF;
+}
+
+.bg-dark-red {
+    background-color: #811712;
+    color: #FFFFFF;
+}
+
+.text-red {
+    color: #BC2018;
+}
+
+.btn-red,
+.badge-red {
+    background: #BC2018;
+    color: #ffffff;
+}
+
+.btn-red:hover,
+.badge-red:hover {
+    background: #811712;
+    color: #ffffff;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.full-height {
     min-height: 100vh;
-    min-width: 100vw;
 }
 
-#banner #texto{
-    font-size: 1.2em;
+.full-width {
+    min-width: 100vh;
 }
 
-.conteudo{
-    font-size: 1.2em;
+.vertical-center {
+    display: flex;
+    align-items: center;
 }
 
-#sobre{
-    background:#BC2018;
-    color:white;
-    min-height: 100vh;
+.counter .label {
+    font-size: 1em;
+    text-align: center;
+    /* O texto das labels fica maior que a largura do elemento pai
+    e portanto não fica centralizado, a margem negativa permite
+    que o texto seja centralizado */
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.organizacao img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+#sobre {
     background-image: url(img/aa3-invertido.jpg);
     background-position: center;
     background-size: cover;
 }
 
-
-#programacao{
-    min-height: 100vh;
-}
-
-#programacao a{
-    font-size: 65px;
-}
-
-#participe{
-    color: white;
-    min-height: 100vh;
-    background:#BC2018;
+#participe {
     background-image: url(img/aa.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#apoiadores{
-    min-height: 100vh;
-
+#mainNavbar {
+    background: #FFFFFF;
 }
 
-#apoiadores a{
-    font-size: 1.2em;
-}
-
-#mainNavbar{
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-#mainNavbar.scrolled{
+#mainNavbar.scrolled {
     background: #BC2018;
     color: white;
     transition: background 800ms;
-
 }
 
-#organizacao{
-    color: white;
-    min-height: 100vh;
-    background:#BC2018;
+#banner {
+    font-size: 1.2em;
 }
 
-#organizacao a{
-    font-size: 1.2rem;
+.navbar-brand {
+    font-size: 1.5em;
 }
 
-.countDown{
-    color:white;
-    background: #BC2018;
-}
-
-.title{
-    color:#BC2018;
-}
-
-.navbar-brand img{
+.navbar-brand img {
     height: 40px;
 }
 
-.conteudo img{
-    margin-left: 100px;
-    height: 200px;
-}
-
-.fab{
-    color: #BC2018;
-    font-size: 2.0em;
-}
-
-.countText{
-    font-size: 2.0em;
-}
-
 .line {
-  height: 1px;
-  background-color: #BC2018;
-  padding: 1px;
+    height: 1px;
+    padding: 1px;
 }
 
 .right-rotate {
-  -ms-transform: rotate(-80deg);
-  -webkit-transform: rotate(-80deg);
-  transform: rotate(-80deg);
+    -ms-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
 }
+
+
+
+/* .conteudo {
+    font-size: 1.1em;
+    font-weight: 600;
+} */
+
+@media (min-width: 992px) {
+    /* .conteudo {
+        font-size: 1.4em;
+    }
+    .navbar-brand {
+        font-size: 1.3em;
+    }
+    #mainNavbar {
+        font-size: 1.2em;
+    }
+    #banner h1 {
+        font-size: 6.0rem;
+    } */
+    body{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .title{
+        font-size:50px;
+    }
+} 
